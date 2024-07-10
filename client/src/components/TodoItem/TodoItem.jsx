@@ -30,7 +30,7 @@ const TodoItem = ({
     try {
       const res = await axios.put(
         // `http://localhost:8080/api/todo-app/todo/${todoId}/update`,
-        `https://mern-stack-todo-server.onrender.com/api/todo-app/todo/${todoId}/update`
+        `https://mern-stack-todo-server.onrender.com/api/todo-app/todo/${todoId}/update`,
         {
           todoTitle: title,
           todoDiscription: discription,
@@ -50,7 +50,7 @@ const TodoItem = ({
     try {
       const res = await axios.delete(
         // `http://localhost:8080/api/todo-app/todo/${todoId}/delete`
-        `https://mern-stack-todo-server.onrender.com/api/todo-app/todo/${todoId}/delete`
+        `https://mern-stack-todo-server.onrender.com/api/todo-app/todo/${todoId}/delete`,
       );
       if (res) {
         notify("todo removed.");
@@ -74,7 +74,7 @@ const TodoItem = ({
     try {
       const res = await axios.post(
         // `http://localhost:8080/api/todo-app/todo/${todoId}/subtodo`,
-        `https://mern-stack-todo-server.onrender.com/api/todo-app/todo/${todoId}/subtodo`
+        `https://mern-stack-todo-server.onrender.com/api/todo-app/todo/${todoId}/subtodo`,
         {
           subTodoTitle,
           subTodoDiscription,
