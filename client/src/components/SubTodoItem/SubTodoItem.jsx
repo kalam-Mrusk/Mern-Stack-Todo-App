@@ -20,7 +20,7 @@ const SubTodoItem = ({
     try {
       const res = await axios.put(
         // `http://localhost:8080/api/todo-app/todo/${todoId}/subtodo/${subTodoId}/update`,
-        `https://mern-stack-todo-server.onrender.com/api/todo-app/todo/${todoId}/subtodo/${subTodoId}/update`
+        `https://mern-stack-todo-server.onrender.com/api/todo-app/todo/${todoId}/subtodo/${subTodoId}/update`,
         {
           subTodoTitle: title,
           subTodoDiscription: discription,
