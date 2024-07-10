@@ -24,7 +24,8 @@ const Signin = () => {
     }
     try {
       const res = await axios.post(
-        "http://localhost:8080/api/todo-app/user/auth/register",
+        // "http://localhost:8080/api/todo-app/user/auth/register",
+        "https://mern-stack-todo-server.onrender.com/api/todo-app/user/auth/register",
         {
           fullname,
           username,
