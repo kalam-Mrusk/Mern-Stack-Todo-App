@@ -19,7 +19,8 @@ const SubTodoItem = ({
     if (incompleteDetails) return window.alert("incomplete details.");
     try {
       const res = await axios.put(
-        `http://localhost:8080/api/todo-app/todo/${todoId}/subtodo/${subTodoId}/update`,
+        // `http://localhost:8080/api/todo-app/todo/${todoId}/subtodo/${subTodoId}/update`,
+        `https://mern-stack-todo-server.onrender.com/api/todo-app/todo/${todoId}/subtodo/${subTodoId}/update`
         {
           subTodoTitle: title,
           subTodoDiscription: discription,
@@ -36,7 +37,8 @@ const SubTodoItem = ({
   const removeSubTodo = async () => {
     try {
       const res = await axios.delete(
-        `http://localhost:8080/api/todo-app/todo/${todoId}/subtodo/${subTodoId}/delete`
+        // `http://localhost:8080/api/todo-app/todo/${todoId}/subtodo/${subTodoId}/delete`
+        `https://mern-stack-todo-server.onrender.com/api/todo-app/todo/${todoId}/subtodo/${subTodoId}/delete`
       );
       if (res) {
         notify("sub todo removed.");
