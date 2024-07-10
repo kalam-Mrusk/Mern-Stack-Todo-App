@@ -1,0 +1,83 @@
+.todoPageContainer {
+  max-width: 1200px;
+  margin: auto;
+}
+.todoHeader {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+  /* border: 2px solid green; */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto 20px;
+  padding: 1rem;
+}
+.todoHeader .fullname {
+  font-size: 1.5rem;
+  color: rgb(49, 237, 184);
+}
+.todoHeader button {
+  border: none;
+  padding: 4px 8px;
+  background-color: rgb(237, 82, 82);
+  border-radius: 5px;
+}
+.todoPageInputSection {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+.todoPageContainer .writeTodoImg {
+  display: block;
+  margin: 3rem auto 1.5rem;
+  height: 70px;
+}
+.todoPageContainer h2 {
+  text-align: center;
+  margin: 3rem 0px 1.5rem;
+}
+.todoPageInputSection input {
+  width: 100%;
+  padding: 6px 5px;
+  margin: 15px 0px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 6px 0px rgb(166, 165, 165);
+  border-radius: 10px;
+}
+.todoPageInputSection textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 70px;
+  min-height: 70px;
+  padding: 6px 5px;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 6px 0px rgb(166, 165, 165);
+  border-radius: 10px;
+}
+.todoPageInputSection button {
+  width: 100px;
+  padding: 5px 0px;
+  border: none;
+  border-radius: 10px;
+  margin: 15px auto;
+  font-size: 16px;
+  background-color: rgb(100, 188, 100);
+}
+
+.todoPageItemContainer {
+  width: 95%;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(21rem, 1fr));
+  gap: 10px;
+}
+@media (max-width: 600px) {
+  .todoHeader .fullname {
+    font-size: 16px;
+  }
+}

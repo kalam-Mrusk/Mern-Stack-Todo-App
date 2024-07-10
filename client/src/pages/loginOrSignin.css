@@ -1,0 +1,51 @@
+.loginPage,
+.signinPage {
+  border: 2px solid black;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  max-width: 500px;
+  padding: 15px;
+  margin: 100px auto 10px;
+  background-color: #fff;
+}
+.loginPage .loginForm,
+.signinPage .signinForm {
+  width: 100%;
+  text-align: center;
+}
+.loginForm input,
+.signinForm input {
+  margin: 20px auto;
+  display: block;
+  width: 80%;
+  height: 30px;
+  padding-left: 10px;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  border: 1px solid gray;
+}
+.loginForm button,
+.signinForm button {
+  width: 5rem;
+  height: 2rem;
+  outline: none;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.loginForm button:hover,
+.signinForm button:hover {
+  background-color: rgb(26, 187, 26);
+  color: #fff;
+}
+.loginPage .dontHaveAccount {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  margin: auto;
+}
+@media (max-width: 600px) {
+  .loginPage,
+  .signinPage {
+    max-width: 300px;
+  }
+}

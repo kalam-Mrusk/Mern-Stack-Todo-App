@@ -1,0 +1,49 @@
+.subTodoContainer {
+  border: 1px solid rgb(216, 217, 216);
+  background-color: #fff;
+  width: 220px;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 0px rgb(166, 165, 165);
+}
+.subTodoContainer .subTodoItemInputSection,
+.subTodoContainer .subTodoItemButtonSection {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.subTodoContainer .subTodoItemInputSection {
+  /* border: 2px solid blue; */
+  width: 85%;
+}
+.subTodoContainer .subTodoItemButtonSection {
+  /* border: 2px solid goldenrod; */
+  width: 10%;
+}
+.subTodoItemInputSection input {
+  width: 100%;
+  padding: 2px 0px;
+  margin-bottom: 2px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+.subTodoItemInputSection textarea {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 90px;
+  min-height: 90px;
+  padding: 2px 0px;
+  font-size: 13px;
+  border: none;
+  outline: none;
+}
+.subTodoItemButtonSection button {
+  border: 1px solid rgb(202, 202, 202);
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
