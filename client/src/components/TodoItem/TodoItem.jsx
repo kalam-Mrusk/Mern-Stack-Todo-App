@@ -50,7 +50,7 @@ const TodoItem = ({
     try {
       const res = await axios.delete(
         // `http://localhost:8080/api/todo-app/todo/${todoId}/delete`
-        `https://mern-stack-todo-server.onrender.com/api/todo-app/todo/${todoId}/delete`,
+        `https://mern-stack-todo-server.onrender.com/api/todo-app/todo/${todoId}/delete`
       );
       if (res) {
         notify("todo removed.");
