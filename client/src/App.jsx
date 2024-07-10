@@ -13,7 +13,8 @@ function App() {
   const getCurrentUser = async () => {
     try {
       const res = await axios.get(
-        "http://localhost:8080/api/todo-app/user/get-current-user",
+        // "http://localhost:8080/api/todo-app/user/get-current-user",
+         "https://mern-stack-todo-server.onrender.com/api/todo-app/user/get-current-user",
         {
           withCredentials: true,
         }
