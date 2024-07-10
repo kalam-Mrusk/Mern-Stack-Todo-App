@@ -16,6 +16,7 @@ const Todo = () => {
   const [title, setTitle] = useState("");
   const [discription, setDiscription] = useState("");
   const [allTodos, setAllTodos] = useState([]);
+  const [handler, setHandler] = useState(false);
   const userLogOut = async () => {
     try {
       const res = await axios.get(
@@ -38,7 +39,8 @@ const Todo = () => {
     });
     if (incompleteDetails) return window.alert("incomplete details.");
     try {
-      dispatch(loadingStart());
+      // dispatch(loadingStart());
+      setHandler(true);
       const res = await axios.post(
         // "http://localhost:8080/api/todo-app/todo/create",
         "https://mern-stack-todo-server.onrender.com/api/todo-app/todo/create",
@@ -54,10 +56,14 @@ const Todo = () => {
         setDiscription("");
         getAllTodo();
       }
-      dispatch(loadingEnd());
+      // dispatch(loadingEnd());
+      setTimeout(() => {
+        setHandler(false);
+      }, 1000);
     } catch (error) {
       console.log(error);
-      dispatch(loadingEnd());
+      // dispatch(loadingEnd());
+      setHandler(false);
     }
   };
 
@@ -107,7 +113,7 @@ const Todo = () => {
           value={discription}
           onChange={(e) => setDiscription(e.target.value)}
         ></textarea>
-        {loading ? (
+        {handler ? (
           <div style={{ margin: "auto" }}>
             <ThreeDots
               visible={true}
