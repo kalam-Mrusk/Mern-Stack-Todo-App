@@ -8,7 +8,7 @@ dotenv.config({ path: "./.env" });
 const app = express();
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:4173","https://mern-stack-todo-app-jxoy.onrender.com","https://tasks-managing-app.onrender.com"],
+    origin: ["http://localhost:5173", "http://localhost:4173","https://mern-stack-todo-app-4m2t.onrender.com","https://tasks-managing-app.onrender.com"],
     credentials: true,
   })
 );
